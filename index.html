@@ -14,22 +14,30 @@
 </head>
 <body>
     <div class="container">
+        <div class="weather-wrapper">
         <div class="weather-border">
+        <div class="overview">
     <h1>
         Hello London looks like today is...
     </h1>
     <ul>
         <li>
-            Tuesday 5pm
+            Tuesday 05:00
         </li>
         <li>
             Sunny
         </li>
     </ul>
+    </div>
     <div class="row">
         <div class="col-6">
-            <img src="https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamRTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8f58db6031cb325cfbaf366a330cf78148c0444a/Sun.png?disposition=inline" alt="sunny" width="50px"/>
-            12°C | °F
+            <div class="d-flex weather-temperature">
+            <img src="https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamRTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8f58db6031cb325cfbaf366a330cf78148c0444a/Sun.png?disposition=inline" alt="sunny" id="icon"/>
+            <strong id="temperature">15</strong>
+            <span class="units"> °C | 
+                <a href = "#" id="farenheit">°F</a>
+                 </span>
+            </div>
         </div>
         <div class="col-6">
             <ul>
@@ -45,7 +53,8 @@
             </ul>
         </div>
     </div>
-    <small>
+    </div>
+        <small>
         <a href="https://github.com/ycode2023/final-weather-app" target="_blank">
             Open-source code</a>
         by Yalda Keshavarzi
