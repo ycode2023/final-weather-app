@@ -1,3 +1,33 @@
+body{
+    font-family: 'Playfair Display', serif;
+
+}
+
+.weather-border{
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid rgb(254, 186, 15);
+    border-radius: 10px;
+}
+
 h1{
-    color: red;
+    font-weight: lighter;
+    font-size: 35px;
+    font-weight: 5;
+    line-height: 30px;
+    margin-bottom: 2;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 5;
+    line-height: 30px;
+
 }
