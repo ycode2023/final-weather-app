@@ -16,8 +16,11 @@ ul{
 
 li{
     list-style: none;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 23px;
+}
+
+li:first-letter{
     text-transform: capitalize;
 }
 
