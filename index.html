@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+<link rel="stylesheet" href="src/style.css">
     <title>Weather App</title>
 </head>
 <body>
@@ -18,22 +19,20 @@
         <div class="weather-border">
         <div class="overview">
     <h1>
-        Hello London looks like today is...
+        Hello <span id="city"></span> looks like today is...
     </h1>
     <ul>
         <li>
             Tuesday 05:00
         </li>
-        <li>
-            Sunny
-        </li>
+        <li id="description"></li>
     </ul>
     </div>
     <div class="row">
         <div class="col-6">
             <div class="d-flex weather-temperature">
             <img src="https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamRTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8f58db6031cb325cfbaf366a330cf78148c0444a/Sun.png?disposition=inline" alt="sunny" id="icon"/>
-            <strong id="temperature">15</strong>
+            <strong id="temperature"></strong>
             <span class="units"> °C | 
                 <a href = "#" id="farenheit">°F</a>
                  </span>
@@ -42,13 +41,10 @@
         <div class="col-6">
             <ul>
                 <li>
-                    Precipitation: 0%
+                    Humidity: <span id="humidity"></span>%
                 </li>
                 <li>
-                    Humidity: 73%
-                </li>
-                <li>
-                    Wind: 2 km/h
+                    Wind: <span id="wind"></span>km/h
                 </li>
             </ul>
         </div>
