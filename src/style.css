@@ -62,3 +62,11 @@ position: relative;
 font-size: 15px;
 top: 13px;
 }
+
+.searchbar{
+border-color: rgb(254, 186, 15);
+border-radius: 10px;
+border-width: 1px;
+text-align: center;
+outline: none;
+}
