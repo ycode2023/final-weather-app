@@ -36,11 +36,23 @@ function displayTemperature (response) {
     let iconElement = document.querySelector("#icon");
         iconElement.setAttribute ("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
         iconElement.setAttribute("alt", response.data.weather[0].description);
-    
     }
 
+
+function search(city){
 let apiKey = "733dfaa98425c3e233718439f77dabb3";
-let units = "metric"
-let city = "Hastings"
+let units = "metric";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("London");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
