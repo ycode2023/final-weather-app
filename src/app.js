@@ -33,10 +33,14 @@ function displayTemperature (response) {
       windElement.innerHTML = Math.round(response.data.wind.speed);
     let dateElement = document.querySelector("#date");
       dateElement.innerHTML = formatDate(response.data.dt * 1000);
+    let iconElement = document.querySelector("#icon");
+        iconElement.setAttribute ("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+        iconElement.setAttribute("alt", response.data.weather[0].description);
+    
     }
 
 let apiKey = "733dfaa98425c3e233718439f77dabb3";
 let units = "metric"
-let city = "London"
+let city = "Hastings"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
 axios.get(apiUrl).then(displayTemperature);

@@ -24,6 +24,11 @@ li:first-letter{
     text-transform: capitalize;
 }
 
+a{
+    text-decoration: none;
+}
+
+
 .weather-wrapper{
     max-width: 650px;
     margin: 30px auto;
@@ -40,14 +45,14 @@ li:first-letter{
 }
 
 .weather-temperature img{
-    margin-right: 5px;
-    margin-top: 10px;
-     width: 60px;
-     height: 60px;
+    margin-top: 5px;
+     width: 80px;
+     height: 80px;
 }
 
+
 .weather-temperature strong{
-    font-size: 55px;
+    font-size: 65px;
     line-height: 1;
     font-weight: 350;
 }
@@ -56,9 +61,4 @@ li:first-letter{
 position: relative;
 font-size: 15px;
 top: 13px;
-}
-
-
-a{
-    text-decoration: none;
 }
