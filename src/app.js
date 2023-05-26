@@ -21,8 +21,10 @@ return `${day} ${hours}:${minutes}`;
 
 
 function displayTemperature (response) {
+    celciusTemperature = response.data.main.temp;
+
     let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = Math.round(response.data.main.temp);
+    temperatureElement.innerHTML = Math.round(celciusTemperature);
     let cityElement = document.querySelector("#city");
      cityElement.innerHTML = response.data.name;
     let descriptionElement = document.querySelector("#description");
@@ -36,6 +38,8 @@ function displayTemperature (response) {
     let iconElement = document.querySelector("#icon");
         iconElement.setAttribute ("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
         iconElement.setAttribute("alt", response.data.weather[0].description);
+    
+    
     }
 
 
@@ -52,7 +56,20 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("London");
+function displayFarenheit(event){
+    event.preventDefault();
+    let farenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+    let temperatureElement = document.querySelector("#temperature");
+        temperatureElement.innerHTML = Math.round(farenheitTemperature);
+    
+}
+
+let celciusTemperature =  null
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let farenheit = document.querySelector("#farenheit");
+farenheit.addEventListener("click", displayFarenheit);
+
+search("London");
