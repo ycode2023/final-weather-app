@@ -62,6 +62,17 @@ function displayFarenheit(event){
     let temperatureElement = document.querySelector("#temperature");
         temperatureElement.innerHTML = Math.round(farenheitTemperature);
     
+    celciusLink.classList.remove("active"); 
+    farenheitLink.classList.add("active"); 
+}
+
+function displayCelcius(event){
+   event.preventDefault(); 
+    let temperatureElement = document.querySelector("#temperature");
+        temperatureElement.innerHTML = Math.round(celciusTemperature);
+
+    farenheitLink.classList.remove("active"); 
+    celciusLink.classList.add("active"); 
 }
 
 let celciusTemperature =  null
@@ -69,7 +80,10 @@ let celciusTemperature =  null
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let farenheit = document.querySelector("#farenheit");
-farenheit.addEventListener("click", displayFarenheit);
+let farenheitLink = document.querySelector("#farenheit");
+farenheitLink.addEventListener("click", displayFarenheit);
+
+let celciusLink = document.querySelector("#celcius");
+celcius.addEventListener("click", displayCelcius);
 
 search("London");

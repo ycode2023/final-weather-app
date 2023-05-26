@@ -63,6 +63,15 @@ font-size: 15px;
 top: 13px;
 }
 
+.weather-temperature .active {
+    color: black;
+    cursor: default;
+}
+
+.weather-temperature .active:hover {
+    text-decoration: none;
+}
+
 .searchbar{
 border-color: rgb(254, 186, 15);
 border-radius: 10px;
