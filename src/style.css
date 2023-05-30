@@ -35,7 +35,7 @@ font-weight: bold;
 small{
 font-size: 13px;
 padding-left: 200px;
-line-height: 50px;
+ line-height: 50px;
 }
 
 .weather-wrapper{
@@ -96,3 +96,21 @@ outline: none;
     color: rgb(254, 186, 15);
 }
 
+.weather-forecast{
+margin-top: 10px;
+text-align: center;
+}
+
+.weather-forecast-day{
+font-size: 16px;
+color: rgb(254, 186, 15);
+opacity: 0.8;
+}
+
+.weather-forecast-temp{
+font-size: 14px;
+}
+
+.weather-forecast-temp-min{
+    opacity: 0.6;
+}
