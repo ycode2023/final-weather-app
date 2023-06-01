@@ -39,12 +39,12 @@ padding-left: 200px;
 }
 
 .weather-wrapper{
-    max-width: 650px;
+    max-width: 670px;
     margin: 30px auto;
 }
 
 .weather-border{
-    padding: 20px;
+    padding: 10px;
     border: 1px solid rgb(254, 186, 15);
     border-radius: 10px;
 }
