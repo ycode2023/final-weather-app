@@ -7,6 +7,7 @@ h1{
     font-size: 35px;
     line-height: 30px;
     margin-bottom: 15px;
+    text-align: center;
 
 }
 
@@ -63,17 +64,18 @@ padding-left: 200px;
 }
 
 .weather-temperature img{
-    margin-top: 5px;
-     width: 90px;
-     height: 90px;
+    margin-top: 40px;
+    margin-left: 20px;
+     width: 110px;
+     height: 110px;
 }
 
-
 .weather-temperature strong{
-    font-size: 65px;
+    font-size: 85px;
     line-height: 1;
     font-weight: 350;
     color: rgb(254, 186, 15);
+    margin-top: 40px;
 
 }
 
@@ -82,6 +84,8 @@ position: relative;
 font-size: 15px;
 top: 13px;
 color: rgb(254, 186, 15);
+    margin-top: 40px;
+
 }
 
 .weather-temperature .active {
@@ -122,4 +126,23 @@ font-size: 14px;
 
 .weather-forecast-temp-min{
     opacity: 0.6;
+}
+
+.line{
+    width: 490px;
+    height: 5px;
+    background-color: rgb(254, 186, 15);
+    border: 1px solid rgb(254, 186, 15);
+    border-radius: 10px;
+    margin-left: 30px
+}
+
+.col-3{
+    line-height: 100px;
+    margin-top: 50px;
+}
+
+.subheading{
+    text-align: center;
+    font-size: 13px;
 }

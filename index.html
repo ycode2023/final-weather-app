@@ -50,12 +50,12 @@
         Hello <span id="city" class="city-name"></span> looks like today is...
     </h1>
     <ul>
-        <li>Last updated: <span id="date"></span> </li>
+        <li id="subheading">Last updated: <span id="date"></span> </li>
         <li id="description"></li>
     </ul>
     </div>
     <div class="row">
-        <div class="col-6">
+        <div class="col-5">
             <div class="d-flex weather-temperature">
             <img 
             src="" 
@@ -68,7 +68,7 @@
                  </span>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-3">
             <ul>
                 <li>
                     Humidity: <span id="humidity"></span>%
@@ -78,7 +78,14 @@
                 </li>
             </ul>
         </div>
+        <div class="col-2">
+            <img src="src/person.jpg"
+            alt=""
+            style="width: 180px";
+            >
+        </div>
     </div>
+    <hr class="line">
     <div class="weather-forecast" id="forecast"></div>
     </div>
         <small id="opensource">
