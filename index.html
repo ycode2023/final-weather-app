@@ -26,20 +26,20 @@
                     class="searchbar shadow-sm"
                     id="city-input"
                     autocomplete="off"; 
-                    style="width: 430px; height: 40px;"/>
+                    style="width: 500px; height: 40px;"/>
                     </div>
                     <div class="col-2">
                     <input 
                     type="submit" 
                     class="btn btn-outline-warning shadow-sm" 
-                    style="width: 100px; height: 40px;" 
+                    style="width: 120px; height: 40px;" 
                     value="Search"/>
                     </div>
                      <div class="col-2">
                     <input 
                     type="submit" 
                     class="btn btn-outline shadow-sm btn2" 
-                    style="width: 90px; height: 40px;" 
+                    style="width: 110px; height: 40px;" 
                     value="Current 📍"
                     id="button2"/>
                     </div>
@@ -49,12 +49,8 @@
     <h1>
         Hello <span id="city" class="city-name"></span> looks like today is...
     </h1>
-    <ul>
-        <li id="subheading">Last updated: <span id="date"></span> </li>
-        <li id="description"></li>
-    </ul>
     </div>
-    <div class="row">
+    <div class="row today" id="weather-today">
         <div class="col-5">
             <div class="d-flex weather-temperature">
             <img 
@@ -68,8 +64,10 @@
                  </span>
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-4">
             <ul>
+                 <li id="subheading">Last updated: <span id="date"></span> </li>
+                 <li id="description"></li>
                 <li>
                     Humidity: <span id="humidity"></span>%
                 </li>
@@ -81,7 +79,7 @@
         <div class="col-2">
             <img src="src/person.jpg"
             alt=""
-            style="width: 180px";
+            style="width: 180px"
             >
         </div>
     </div>
