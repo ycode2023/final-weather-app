@@ -49,6 +49,15 @@ padding-left: 200px;
     border-radius: 10px;
 }
 
+.btn2{
+    color: #EC6E4C;
+    border: 1px solid #EC6E4C;
+}
+
+.btn2:hover{
+    background-color: #EC6E4C;
+    transition: all .2s;
+}
 .overview{
     margin-bottom: 15px;
 }
